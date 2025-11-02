@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<p>Sum of Arguments (24+56+98)</p>
+<p id="demo1"></p>
+<script>
+    var a = 24;
+    var b = 56;
+    var c = 98;
+    function addition(){
+        var add=0;
+        for(i=0;i<arguments.length;i++){
+            add=add+arguments[i];
+        }
+        return add
+    }
+    document.getElementById("demo1").innerHTML=addition(a , b , c)
+    </script>
+    <p>Value of trignometric ratios</p>
+    <script>
+    var value1 = math.asin(45);
+    document.write("Sin45 = " + value1 + "<br>");
+    var value2 = math.acos(90);
+    document.write("Cos90 = " + value2  + "<br>");
+    var value3 = math.atan(1);
+    document.write("Tan1 = " + value3  + "<br>");
+    var value4 = math.acosec(-1);
+    document.write("Cosec -1 = " + value4  + "<br>");
+    var value5 = math.asec(60);
+    document.write("Sec60 = " + value5  + "<br>");
+    var value6 = math.acot(140);
+    document.write("Cot140 = " + value6  + "<br>");
+    </script> 
+    <script>
+        var value=Math.asin(1);
+        document.write(" sin1 : "+ value + "<br>");
+        var value=Math.acos(-1);
+        document.write(" Cos(-1) : "+ value + "<br>");
+        var value=Math.atan(.5);
+        document.write("Tan(.5) : "+ value + "<br>");
+    </script>   
+</body>
+</html>
